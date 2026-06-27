@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 600" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
+  <defs>
+    <style>
+      .mono { font-family: 'SF Mono', 'Consolas', 'Menlo', monospace; }
+    </style>
+  </defs>
+
+  <!-- window -->
+  <rect x="0.5" y="0.5" width="919" height="599" rx="12" fill="#1e1e1e" stroke="#000000"/>
+
+  <!-- browser top bar -->
+  <path d="M0 12 A12 12 0 0 1 12 0 H908 A12 12 0 0 1 920 12 V36 H0 Z" fill="#2b2b2b"/>
+  <circle cx="22" cy="18" r="6" fill="#ff5f57"/>
+  <circle cx="42" cy="18" r="6" fill="#febc2e"/>
+  <circle cx="62" cy="18" r="6" fill="#28c840"/>
+  <rect x="150" y="8" width="620" height="20" rx="10" fill="#1e1e1e"/>
+  <text x="166" y="22" class="mono" font-size="11" fill="#9a9a9a">github.com/codespaces/total-recall-9f2c1   ·   Building…</text>
+
+  <!-- VS Code title bar -->
+  <rect x="0" y="36" width="920" height="28" fill="#3c3c3c"/>
+  <text x="460" y="54" font-size="12" fill="#cfcfcf" text-anchor="middle">Total Recall — Agent Harness Workshop  [Codespaces]</text>
+
+  <!-- activity bar -->
+  <rect x="0" y="64" width="48" height="514" fill="#333333"/>
+  <rect x="14" y="82" width="20" height="20" rx="3" fill="none" stroke="#cccccc" stroke-width="1.6"/>
+  <rect x="14" y="118" width="20" height="16" rx="2" fill="none" stroke="#7a7a7a" stroke-width="1.6"/>
+  <circle cx="24" cy="160" r="10" fill="none" stroke="#7a7a7a" stroke-width="1.6"/>
+
+  <!-- editor area -->
+  <rect x="48" y="64" width="872" height="236" fill="#1e1e1e"/>
+  <!-- notebook tab -->
+  <rect x="48" y="64" width="240" height="30" fill="#1e1e1e"/>
+  <rect x="48" y="64" width="240" height="30" fill="#252526"/>
+  <text x="68" y="84" font-size="12" fill="#d7d7d7" class="mono">total_recall_student.ipynb</text>
+  <rect x="48" y="92" width="240" height="2" fill="#007acc"/>
+
+  <!-- notebook toolbar with kernel button (foreshadow) -->
+  <rect x="48" y="94" width="872" height="34" fill="#1e1e1e"/>
+  <text x="68" y="115" font-size="12" fill="#9a9a9a">+ Code   + Markdown   |   ▷ Run All   ⟲ Restart</text>
+  <rect x="742" y="100" width="160" height="22" rx="4" fill="#2d2d2d" stroke="#3c3c3c"/>
+  <text x="756" y="115" font-size="11.5" fill="#cccccc">◇ Select Kernel</text>
+
+  <!-- a faded first cell -->
+  <rect x="68" y="142" width="834" height="92" rx="4" fill="#252526" opacity="0.5"/>
+  <text x="86" y="168" class="mono" font-size="12" fill="#9cdcfe">import</text>
+  <text x="134" y="168" class="mono" font-size="12" fill="#cccccc"> oracledb, matplotlib</text>
+  <text x="86" y="190" class="mono" font-size="12" fill="#9cdcfe">from</text>
+  <text x="120" y="190" class="mono" font-size="12" fill="#cccccc"> langgraph.graph </text>
+  <text x="248" y="190" class="mono" font-size="12" fill="#9cdcfe">import</text>
+  <text x="296" y="190" class="mono" font-size="12" fill="#cccccc"> StateGraph</text>
+  <text x="86" y="218" class="mono" font-size="11.5" fill="#6a6a6a"># ↑ these only import once the build below has finished</text>
+
+  <!-- port-forward toast -->
+  <rect x="556" y="246" width="346" height="44" rx="6" fill="#252526" stroke="#3c3c3c"/>
+  <rect x="556" y="246" width="4" height="44" rx="2" fill="#3794ff"/>
+  <text x="572" y="265" font-size="11.5" fill="#dddddd">Port 8000 (Total Recall appbook) is now available.</text>
+  <rect x="572" y="272" width="120" height="14" rx="3" fill="#0e639c"/>
+  <text x="582" y="283" font-size="10.5" fill="#ffffff">Open in Browser</text>
+
+  <!-- terminal panel -->
+  <rect x="48" y="300" width="872" height="278" fill="#181818"/>
+  <rect x="48" y="300" width="872" height="26" fill="#252526"/>
+  <text x="68" y="317" font-size="11" fill="#7a7a7a" letter-spacing="0.5">PROBLEMS    OUTPUT    </text>
+  <text x="196" y="317" font-size="11" fill="#ffffff" letter-spacing="0.5">TERMINAL</text>
+  <rect x="194" y="324" width="58" height="2" fill="#e0e0e0"/>
+  <text x="270" y="317" font-size="11" fill="#7a7a7a" letter-spacing="0.5">PORTS</text>
+
+  <!-- terminal log -->
+  <text x="68" y="352" class="mono" font-size="12" fill="#858585">@workshop ➜ /workspaces/total_recall_harness_workshop (main) $  postCreate.sh</text>
+  <text x="68" y="378" class="mono" font-size="12.5" fill="#d4d4d4">▸ Installing the appbook dependencies…</text>
+  <text x="68" y="400" class="mono" font-size="12.5" fill="#d4d4d4">▸ Installing the notebook-only deps (LangGraph, Oracle checkpointer, ipykernel, charts)…</text>
+  <text x="68" y="422" class="mono" font-size="12.5" fill="#d4d4d4">▸ Provisioning the Oracle AI Database (AGENT user + in-DB ONNX embedder)…</text>
+
+  <!-- success line highlighted -->
+  <rect x="60" y="446" width="470" height="24" rx="4" fill="#10301f"/>
+  <text x="68" y="463" class="mono" font-size="13" fill="#89d185" font-weight="bold">✓ Setup complete.</text>
+  <text x="68" y="488" class="mono" font-size="12" fill="#858585">  • The appbook auto-starts on port 8000 (a preview opens).</text>
+  <text x="68" y="508" class="mono" font-size="12" fill="#858585">  • Build the harness yourself:  total_recall_student.ipynb</text>
+  <text x="68" y="534" class="mono" font-size="12.5" fill="#89d185">@workshop ➜ … $ ▋</text>
+
+  <!-- callout -->
+  <path d="M548 458 L572 452 L572 464 Z" fill="#ffd24d"/>
+  <rect x="570" y="438" width="320" height="44" rx="6" fill="#fff3cd" stroke="#e0a800"/>
+  <text x="584" y="456" font-size="12" fill="#664d03" font-weight="bold">Your green light.</text>
+  <text x="584" y="473" font-size="11.5" fill="#664d03">Don't pick a kernel or run a cell until you see this line.</text>
+
+  <!-- status bar -->
+  <rect x="0" y="578" width="920" height="22" fill="#007acc"/>
+  <text x="14" y="593" font-size="11" fill="#ffffff">⟳ Setting up your codespace…</text>
+  <text x="906" y="593" font-size="11" fill="#ffffff" text-anchor="end">Codespaces   ·   Python 3.12.13</text>
+</svg>

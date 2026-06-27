@@ -1,0 +1,27 @@
+{
+  "name": "Total Recall — Agent Harness Workshop",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "hostRequirements": {
+    "cpus": 4,
+    "memory": "16gb",
+    "storage": "32gb"
+  },
+  "forwardPorts": [8000, 8888],
+  "portsAttributes": {
+    "8000": { "label": "Total Recall appbook", "onAutoForward": "openPreview" },
+    "8888": { "label": "JupyterLab", "onAutoForward": "silent" }
+  },
+  "postCreateCommand": "bash .devcontainer/postCreate.sh",
+  "postStartCommand": "bash .devcontainer/start-app.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "ms-toolsai.jupyter", "bierner.markdown-mermaid"],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.terminal.activateEnvironment": true
+      }
+    }
+  }
+}

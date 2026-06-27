@@ -1,0 +1,26 @@
+# secrets — never commit
+.env
+*/.env
+app/.env
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# cached ONNX model artifacts (downloaded at provision time into ~/oracle-models)
+oracle-models/
+*.onnx
+
+# os
+.DS_Store
+
+# notebook run artifacts (regenerated on execute)
+context_growth.png
+eval_results.png
+solved_student*.ipynb
+*_executed.ipynb
